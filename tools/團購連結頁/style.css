@@ -117,7 +117,9 @@ body {
   max-width: 400px;
 }
 .hero-intro p {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
+  white-space: pre-line;   /* 依 profile.js 裡的 \n 斷句 */
+  word-break: keep-all;
   font-size: 14px;
   line-height: 2;
   color: var(--ink-2);
