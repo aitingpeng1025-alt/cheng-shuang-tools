@@ -8,24 +8,21 @@
 <meta property="og:title" content="好事丞雙｜團購選物">
 <meta property="og:description" content="我們家用過、也真的在使用的生活好物，開團時間與下單連結都在這裡。">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#faf9f6">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%232d3b36'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23faf9f6' font-family='serif'%3E丞%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#f7f0e1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%23c9483b'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23fffbf3' font-family='serif'%3E丞%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="page">
-  <div class="topbar">
-    <span class="topbar-brand">cheng shuang<span class="topbar-dot">.</span> studio</span>
-  </div>
+<div class="gingham" aria-hidden="true"></div>
 
+<div class="page">
   <!-- 自我介紹 -->
   <header class="hero">
     <div class="avatar" id="avatar" aria-hidden="true"></div>
-    <p class="eyebrow">curated by cheng shuang</p>
     <h1 class="hero-name" id="name"></h1>
     <p class="hero-tagline" id="tagline"></p>
     <div class="hero-intro" id="intro"></div>
@@ -43,8 +40,7 @@
   <main>
     <section class="group" id="section-active">
       <div class="group-head">
-        <p class="rule-label"><span>now open</span></p>
-        <h2 class="group-title">進行中的團購 <span class="group-count" id="count-active"></span></h2>
+        <h2 class="group-title"><span class="dot dot-live"></span>進行中的團購 <span class="group-count" id="count-active"></span></h2>
       </div>
       <div class="cards" id="cards-active"></div>
       <div class="empty" id="empty-active" hidden></div>
@@ -52,9 +48,8 @@
 
     <section class="group" id="section-upcoming" hidden>
       <div class="group-head">
-        <p class="rule-label"><span>coming soon</span></p>
-        <h2 class="group-title">即將開團 <span class="group-count" id="count-upcoming"></span></h2>
-        <p class="group-note">開團當天連結會自動開放，先追蹤 IG 就不會錯過喔</p>
+        <h2 class="group-title"><span class="dot dot-soon"></span>即將開團 <span class="group-count" id="count-upcoming"></span></h2>
+        <p class="group-note">開團當天連結會自動開放，先追蹤 IG 就不會錯過喔！</p>
       </div>
       <div class="cards" id="cards-upcoming"></div>
     </section>
@@ -69,11 +64,11 @@
   </main>
 
   <footer class="footer">
-    <p class="footer-mark">cheng shuang<span class="topbar-dot">.</span> studio</p>
     <p class="footer-brand" id="footer-brand">好事丞雙 x 用插畫玩手作</p>
     <p class="footer-note">團購內容以各團購頁面公告為準，有任何問題歡迎到 IG 私訊我</p>
   </footer>
 </div>
+<div class="gingham gingham-bottom" aria-hidden="true"></div>
 
 <script src="profile.js"></script>
 <script src="data.js"></script>
