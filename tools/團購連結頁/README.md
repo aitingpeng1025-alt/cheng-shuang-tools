@@ -43,7 +43,7 @@
 
 ## 部署上線（網址）
 
-正式網址：https://aitingpeng1025-alt.github.io/cheng-shuang-tools/
+正式網址：https://chengshuang1025.github.io/cheng-shuang-tools/
 
 - 已設定 GitHub Actions（`.github/workflows/deploy-groupbuy.yml`）：`tools/團購連結頁` 有改動、push 到 GitHub 後，約 1 分鐘自動更新網站。
 - 團購的「進行中／即將開團／已結束」是打開網頁當下即時判斷的，不用每天重新發布。

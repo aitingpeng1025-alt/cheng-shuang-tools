@@ -10,13 +10,13 @@
 
 ## 工作桌 + 三個家
 - 📋 GDrive 工作桌：`G:\我的雲端硬碟\cheng-shuang-tools\`（自動跨電腦同步）
-- 🐙 GitHub repo：aitingpeng1025-alt/cheng-shuang-tools（公開，網頁的家）
+- 🐙 GitHub repo：chengshuang1025/cheng-shuang-tools（公開，網頁的家）
 - 📘 Obsidian 駕駛艙：`secondbrain/cheng-shuang-tools/工作筆記.md`（想法的家）
 - 🐘 Supabase 專案：ig-reels-kb（資料的家，用 Supabase MCP 直接查/寫）
 
 ## 工具清單
 （之後加新工具時會自動更新）
-- `tools/團購連結頁`：正式團購網站（自我介紹＋團購清單），網址 https://aitingpeng1025-alt.github.io/cheng-shuang-tools/ ，push 後由 GitHub Actions 自動上線。改 `data.js` 上/下架團購、改 `profile.js` 改自我介紹；截止日到會自動移到「已結束」。只放團購，跟品牌教材 Link-in-bio（cheng-shuang repo）分開
+- `tools/團購連結頁`：正式團購網站（自我介紹＋團購清單），網址 https://chengshuang1025.github.io/cheng-shuang-tools/ ，push 後由 GitHub Actions 自動上線。改 `data.js` 上/下架團購、改 `profile.js` 改自我介紹；截止日到會自動移到「已結束」。只放團購，跟品牌教材 Link-in-bio（cheng-shuang repo）分開
 - `tools/腳本產生器`：輸入主題一次拿到 3 支不同開頭/結構的腳本骨架，規則依據 `RULES.md`（IG Reels 知識庫數據）。有 Windows 排程「cheng-shuang-tools-腳本產生器-每日推薦」每天 7:00 自動讀取進行中團購、產生 2 支腳本寫進當天 Obsidian 每日筆記
 
 ## 工作注意事項
