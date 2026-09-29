@@ -12,8 +12,8 @@ const PROFILE = {
   tagline: "設計獅媽媽的團購選物",
 
   // 頭像：把照片放進 assets/ 資料夾，填檔名，例如 "assets/avatar.jpg"。
-  // 沒填會顯示「丞」字印章。
-  avatar: "",
+  // 沒填會顯示「丞」字圓章。
+  avatar: "assets/avatar.jpg",
 
   // 自我介紹（每一項是一段；\n 是換行，想在哪裡斷句就放在哪裡）
   intro: [
