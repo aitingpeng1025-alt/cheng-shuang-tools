@@ -14,3 +14,6 @@ credentials.*
 # Node.js
 node_modules/
 package-lock.json
+
+# macOS 系統檔
+.DS_Store
