@@ -1,0 +1,43 @@
+# 團購網站自動上線：tools/團購連結頁 有改動並 push 到 main，就自動發布到 GitHub Pages
+name: 發布團購網站
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "tools/團購連結頁/**"
+      - ".github/workflows/deploy-groupbuy.yml"
+  schedule:
+    # 每天台灣時間 00:05 重新發布一次（讓分享預覽等快取保持最新；日期切換本身在瀏覽器端即時判斷）
+    - cron: "5 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 準備網站檔案
+        run: |
+          mkdir -p _site
+          cp -r "tools/團購連結頁/." _site/
+          rm -f _site/README.md
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

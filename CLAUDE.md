@@ -16,7 +16,8 @@
 
 ## 工具清單
 （之後加新工具時會自動更新）
-- （尚無）
+- `tools/團購連結頁`：正式團購網站（自我介紹＋團購清單），網址 https://aitingpeng1025-alt.github.io/cheng-shuang-tools/ ，push 後由 GitHub Actions 自動上線。改 `data.js` 上/下架團購、改 `profile.js` 改自我介紹；截止日到會自動移到「已結束」。只放團購，跟品牌教材 Link-in-bio（cheng-shuang repo）分開
+- `tools/腳本產生器`：輸入主題一次拿到 3 支不同開頭/結構的腳本骨架，規則依據 `RULES.md`（IG Reels 知識庫數據）。有 Windows 排程「cheng-shuang-tools-腳本產生器-每日推薦」每天 7:00 自動讀取進行中團購、產生 2 支腳本寫進當天 Obsidian 每日筆記
 
 ## 工作注意事項
 - commit 訊息要寫清楚做了什麼 + 為什麼

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>好事丞雙｜團購選物</title>
+<meta name="description" content="好事丞雙的團購選物：我們家用過、也真的在使用的生活好物，有雷就不上架，開團時間與下單連結都在這裡。">
+<meta property="og:title" content="好事丞雙｜團購選物">
+<meta property="og:description" content="我們家用過、也真的在使用的生活好物，開團時間與下單連結都在這裡。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f6f1e6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%23a8462e'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23fffdf7' font-family='serif'%3E丞%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="topbar">
+    <span class="topbar-brand" id="topbar-brand">好事丞雙</span>
+    <span class="topbar-sub">團購選物</span>
+  </div>
+
+  <!-- 自我介紹 -->
+  <header class="hero">
+    <div class="hero-head">
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+      <div class="hero-names">
+        <p class="hero-title" id="title"></p>
+        <h1 class="hero-name" id="name"></h1>
+        <p class="hero-tagline" id="tagline"></p>
+      </div>
+    </div>
+    <div class="hero-intro" id="intro"></div>
+    <ul class="promises" id="promises"></ul>
+    <div class="hero-actions">
+      <a class="btn-ig" id="ig-link" target="_blank" rel="noopener noreferrer" hidden></a>
+      <div class="social" id="social"></div>
+    </div>
+  </header>
+
+  <!-- 分區快速切換 -->
+  <nav class="jump" id="jump" aria-label="團購分區"></nav>
+
+  <main>
+    <section class="group" id="section-active">
+      <div class="group-head">
+        <h2 class="group-title"><span class="dot dot-live"></span>進行中的團購</h2>
+        <span class="group-count" id="count-active"></span>
+      </div>
+      <div class="cards" id="cards-active"></div>
+      <div class="empty" id="empty-active" hidden></div>
+    </section>
+
+    <section class="group" id="section-upcoming" hidden>
+      <div class="group-head">
+        <h2 class="group-title"><span class="dot dot-soon"></span>即將開團</h2>
+        <span class="group-count" id="count-upcoming"></span>
+      </div>
+      <p class="group-note">開團當天連結會自動開放，先追蹤 IG 就不會錯過喔！</p>
+      <div class="cards" id="cards-upcoming"></div>
+    </section>
+
+    <section class="group archived" id="section-ended" hidden>
+      <button class="toggle-ended" id="toggle-ended" type="button" aria-expanded="false">
+        <span>已結束的團購 <span class="group-count" id="count-ended"></span></span>
+        <span class="chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="cards" id="cards-ended" hidden></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-seal" aria-hidden="true">丞</div>
+    <p class="footer-brand" id="footer-brand">好事丞雙 x 用插畫玩手作</p>
+    <p class="footer-note">團購內容以各團購頁面公告為準，有任何問題歡迎到 IG 私訊我。</p>
+  </footer>
+</div>
+
+<script src="profile.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
