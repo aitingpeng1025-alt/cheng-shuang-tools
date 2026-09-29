@@ -83,6 +83,7 @@
       img.loading = "lazy";
       thumb.appendChild(img);
     } else {
+      thumb.classList.add("no-img");
       thumb.appendChild(el("span", "card-emoji", TAG_EMOJI[item.tag] || "🛍️"));
     }
     card.appendChild(thumb);
@@ -148,8 +149,7 @@
     document.getElementById("title").textContent = P.title || "";
     document.getElementById("name").textContent = P.name || P.brand || "";
     document.getElementById("tagline").textContent = P.tagline || "";
-    if (P.brand) document.getElementById("topbar-brand").textContent = P.brand;
-    if (P.title) document.getElementById("footer-brand").textContent = P.title;
+    if (P.brand || P.title) document.getElementById("footer-brand").textContent = [P.brand, P.title].filter(Boolean).join(" x ");
 
     const intro = document.getElementById("intro");
     (P.intro || []).forEach((t) => intro.appendChild(el("p", null, t)));
