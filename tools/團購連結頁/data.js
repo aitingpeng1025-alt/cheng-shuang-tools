@@ -31,7 +31,7 @@ const GROUP_BUYS = [
       "來自廢渣，功用卻一點都不渣；胺基酸溫和親膚，洗後雙手不緊繃"
     ],
     image: "",
-    url: "",  // TODO：填入團購連結
+    url: "https://www.veganwell.co/one-page-stores/chengshuang1025?utm_source=group&utm_medium=link&utm_campaign=261001-cf",
     tag: "生活用品",
     start: "2026-10-01",
     end: "2026-10-16"
