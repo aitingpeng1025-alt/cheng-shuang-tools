@@ -40,7 +40,7 @@ const GROUP_BUYS = [
     title: "伊頓果乾",
     desc: "低溫烘乾，吃得到水果濕潤口感的果乾",
     image: "",
-    url: "",  // TODO：填入團購連結
+    url: "https://p2.groupbuyforms.tw/riyxe",
     tag: "食品",
     start: "2026-09-29",   // 提前開團（原本 10/01）
     end: "2026-10-14"
